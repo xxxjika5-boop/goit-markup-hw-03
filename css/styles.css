@@ -5,6 +5,22 @@ body {
     line-height: 1.5;
     background-color: #fff;
 }
+/* ======= RESET=======*/
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+    padding: 0% 15px;
+    margin: 0 auto;
+}
 /* ====== LOGO (HEADER & FOOTER) ====== */
 .logo,
 .logo-button {
@@ -27,7 +43,18 @@ body {
 .footer-logo-accent {
     color: #4D5AE5;
 }
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* ====== NAV LINKS ====== */
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
 .nav-link {
     color: #2E2F42;
     font-size: 16px;
@@ -41,8 +68,11 @@ body {
     color: #404BBF;
 }
 /* ====== CONTACTS ====== */
-ul {
-    list-style: none;
+.contacts-list {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 .contact-link {
     color: #434455;
@@ -83,6 +113,12 @@ ul {
     background-color: #404BBF;
 }
 /* ====== FEATURES ====== */
+.features-list {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
 .our-team,
 .team-portfolio {
     color: #2E2F42;
@@ -101,6 +137,12 @@ ul {
     line-height: 1.5;
 }
 /* ====== TEAM ====== */
+.team-list {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
 .team {
     background-color: #f4f4fd;
 }
@@ -129,6 +171,14 @@ ul {
     line-height: 1.5;
 }
 /* ====== PORTFOLIO ====== */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    width: calc((100% - 19px * 3) / 2);
+}
 .team-portfolio {
     text-align: center;
     font-size: 36px;
