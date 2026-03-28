@@ -33,16 +33,13 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
 }
 /* ====== LOGO (HEADER & FOOTER) ====== */
-.logo,
-.logo-button {
+.logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.17;
     text-decoration: none;
-}
-.logo {
     color: #2E2F42;
     padding: 24px 0;
     margin-right: 76px;
@@ -99,7 +96,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .contacts-personnel {
     font-style: normal;
-    margin-left: auto;
 }
 /* ====== HERO ====== */
 .hero {
