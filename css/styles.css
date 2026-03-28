@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 24px 0;
     margin-right: 76px;
 }
-.logo .website-name {
+.accent {
     color: #4D5AE5;
 }
 .footer-logo-accent {
@@ -154,7 +154,6 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 24px;
 }
 .features-item {
-    margin: 0 auto;
     width: calc((100% - 72px) / 4);
 }
 .our-team,
@@ -197,7 +196,7 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
     align-items: center;
     width: 264px;
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px;
     overflow: hidden;
 }
 .team-name {
@@ -233,7 +232,7 @@ h1, h2, h3, h4, h5, h6, p {
     flex-wrap: wrap;
     gap: 48px 24px;
 }
-.portfolio-card {
+.portfolio-card{
     width: calc((100% - 48px) / 3);
     background-color: #fff;
     border-radius: 0 0 4px 4px;
@@ -250,7 +249,7 @@ h1, h2, h3, h4, h5, h6, p {
         0px 1px 3px rgba(46, 47, 66, 0.16);
 }
 .team-photo,
-.portfolio-card img {
+.portfolio-img {
     display: block;
 }
 .team-portfolio {
@@ -295,9 +294,6 @@ h1, h2, h3, h4, h5, h6, p {
     color: #f4f4fd;
     display: inline-block;
     margin-bottom: 0;
-}
-.footer-logo-accent {
-    color: #4D5AE5;
 }
 .bottom-paragraph {
     max-width: 264px;
