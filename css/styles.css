@@ -20,12 +20,12 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 120px 0;
 }
 .page-header .container {
-    border-bottom: 1px solid #e7e9fc;
-    padding: 0 15px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
 }
 /*======common======*/
 .container {
@@ -102,9 +102,12 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: auto;
 }
 /* ====== HERO ====== */
-.intro {
+.hero {
     background-color: #2E2F42;
     padding: 188px 0;
+}
+.intro {
+    padding: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -120,15 +123,13 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.07;
 }
 .intro-button {
-    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
     background-color: #4D5AE5;
-    width: 169px;
-    height: 56px;
-    margin: 0;
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
     cursor: pointer;
 }
 .intro-button:hover,
@@ -147,11 +148,6 @@ h1, h2, h3, h4, h5, h6, p {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-.features {
-    max-width: 1128px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 .features-list {
     display: flex;
@@ -200,6 +196,9 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 264px;
+    border-radius: 4px;
+    overflow: hidden;
 }
 .team-name {
     padding: 32px 16px;
@@ -229,28 +228,26 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
 }
 /* ====== PORTFOLIO ====== */
-.portfolio-container {
-    display: flex;
-    justify-content: center;
-}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    max-width: 1128px;
 }
-.portfolio-list li {
+.portfolio-card {
     width: calc((100% - 48px) / 3);
-    border: 1px solid #e7e9fc;
-    border-top: none;
+    background-color: #fff;
     border-radius: 0 0 4px 4px;
     overflow: hidden;
-    background-color: #ffffff;
+    cursor: pointer;
 }
-.portfolio-list li:hover {
+.portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+.portfolio-card:hover {
     box-shadow: 0px 2px 8px rgba(46, 47, 66, 0.08),
         0px 1px 3px rgba(46, 47, 66, 0.16);
-    cursor: pointer;
 }
 .team-portfolio {
     text-align: center;
@@ -273,15 +270,13 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
-.portfolio-info {
-    margin: 16px 32px;
-}
 /* ====== FOOTER ====== */
 .footer-page {
     background-color: #2E2F42;
     padding: 100px 0;
 }
 .footer-page .container {
+    gap: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
